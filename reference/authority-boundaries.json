@@ -1,0 +1,27 @@
+{
+  "scope": "software-facing bookkeeping near the A1-to-A2 transition",
+  "non_claims": [
+    "The prototype does not run at A0 or simulate unresolved reality.",
+    "The prototype does not prove PAL or ZSA.",
+    "ZSA-related concepts remain attributed and scoped as in A0 Boundary Kernel v0.8.2.",
+    "A terminal status or successful receipt does not create external authority.",
+    "Rule presence does not create authority; rule adoption and actor authority are checked separately.",
+    "The prototype performs no autonomous external action."
+  ],
+  "rule_governance_required": [
+    "author",
+    "adopter",
+    "scope",
+    "effective_from",
+    "effective_until",
+    "rule_hash",
+    "authority_reference"
+  ],
+  "failure_categories": [
+    "EVIDENTIARY",
+    "PROCEDURAL",
+    "AUTHORITY",
+    "INTEGRITY",
+    "SUBSTANTIVE"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "profile_id": "BASELINE",
+  "normal_progression": ["UNRESOLVED", "CANDIDATE", "WEIGHTED", "MEASURED", "COMMITTED"],
+  "allowed": {
+    "UNRESOLVED": ["CANDIDATE"],
+    "CANDIDATE": ["WEIGHTED", "REJECTED", "EXPIRED"],
+    "WEIGHTED": ["MEASURED", "REJECTED", "EXPIRED"],
+    "MEASURED": ["COMMITTED", "REJECTED", "EXPIRED"],
+    "COMMITTED": ["EXPIRED"],
+    "REJECTED": ["EXPIRED"],
+    "EXPIRED": []
+  },
+  "profile_dependent": {
+    "UNRESOLVED": ["EXPIRED"],
+    "requirement": "Name the presentation, observation, or rule eligibility window that expires; unresolved possibility itself is not erased."
+  },
+  "reopening": "Create a new linked CANDIDATE after declared material deltas; never mutate a terminal source backward.",
+  "anti_backflow": "Later lifecycle status and receipts may reference but never rewrite earlier candidate content or evidence."
+}

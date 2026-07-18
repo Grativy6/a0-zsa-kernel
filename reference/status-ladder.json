@@ -1,0 +1,17 @@
+{
+  "source": "A0 Boundary Kernel v0.8.2, Boundary-Status Index",
+  "status": "proposed baseline; not claimed final for every implementation",
+  "statuses": {
+    "UNRESOLVED": "Not yet presented for formal handling; possible but unsettled.",
+    "CANDIDATE": "Appeared as a state or action that may need evaluation.",
+    "WEIGHTED": "Evaluated by relevant admissibility weights.",
+    "MEASURED": "Locally observed, resolved, or classified for a declared purpose.",
+    "COMMITTED": "Retained as software-readable structure.",
+    "REJECTED": "Failed declared admissibility and must not proceed toward commitment.",
+    "EXPIRED": "No longer active, relevant, or eligible for commitment."
+  },
+  "separate_axis": {
+    "attempt_outcomes": ["ALLOWED", "BLOCKED", "INVALID", "REPLAYED"],
+    "note": "An attempt outcome does not itself rewrite candidate lifecycle status."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "0.1",
+  "packet_id": "invalid-binary-float",
+  "operation": "TRANSITION",
+  "evaluation_time": "2026-07-17T12:00:00Z",
+  "candidate": {
+    "candidate_id": "cand-example-001",
+    "kind": "example_action",
+    "content": {"action": "retain-example", "payload": "deterministic"},
+    "created_at": "2026-07-17T11:00:00Z",
+    "content_hash": "sha256:3eeb258285f94c8dbc18b131302f0d8a585227c643a41494bc5f2fa5404522a6"
+  },
+  "current_state": {
+    "candidate_id": "cand-example-001",
+    "status": "CANDIDATE",
+    "candidate_content_hash": "sha256:3eeb258285f94c8dbc18b131302f0d8a585227c643a41494bc5f2fa5404522a6"
+  },
+  "requested_transition": {
+    "from_status": "CANDIDATE",
+    "to_status": "WEIGHTED",
+    "reason": "This must be invalid because risk is a binary JSON number."
+  },
+  "observations": [],
+  "weighting": {
+    "rule_id": "invalid-float-rule",
+    "factors": {"risk": 0.2},
+    "result": "0.200000",
+    "hard_vetoes": []
+  },
+  "trace": {}
+}
