@@ -4,16 +4,21 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "a0-zsa-kernel-prototype"
-version = "0.1.0"
-description = "Isolated, local A0 Boundary Kernel transition prototype"
+version = "0.2.0"
+description = "Legacy A0 transition prototype plus selected A0BK candidate shadow-routing mechanisms"
 requires-python = ">=3.11"
 dependencies = ["pydantic>=2.13,<3"]
 
 [project.optional-dependencies]
-test = ["pytest>=8,<9"]
+test = [
+  "mypy>=1.17,<2",
+  "pytest>=8,<9",
+  "ruff>=0.12,<1",
+]
 
 [project.scripts]
 a0-zsa-kernel = "a0_zsa_kernel.cli:main"
+a0bk-route = "a0bk_kernel.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
@@ -25,3 +30,16 @@ where = ["src"]
 pythonpath = ["src"]
 testpaths = ["tests"]
 addopts = "-q"
+
+[tool.ruff]
+include = ["src/a0bk_kernel/*.py", "tests/test_a0bk_*.py"]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src/a0bk_kernel"]

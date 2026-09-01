@@ -1,0 +1,65 @@
+{
+  "allow_external_proposals": false,
+  "diagnostic": null,
+  "guards": [
+    {
+      "authority_ceiling": "NO_EXECUTION_AUTHORITY",
+      "guard_id": "IDENTITY",
+      "source_ref": "sha256:f3b57da98db3b105e6a67b2c76471123365041ce86e53977be5aa7002b84c46a",
+      "source_version": "A0BK-v0.10.0-candidate"
+    },
+    {
+      "authority_ceiling": "NO_EXECUTION_AUTHORITY",
+      "guard_id": "WITNESS",
+      "source_ref": "sha256:f3b57da98db3b105e6a67b2c76471123365041ce86e53977be5aa7002b84c46a",
+      "source_version": "A0BK-v0.10.0-candidate"
+    },
+    {
+      "authority_ceiling": "NO_EXECUTION_AUTHORITY",
+      "guard_id": "SCOPE",
+      "source_ref": "sha256:f3b57da98db3b105e6a67b2c76471123365041ce86e53977be5aa7002b84c46a",
+      "source_version": "A0BK-v0.10.0-candidate"
+    },
+    {
+      "authority_ceiling": "NO_EXECUTION_AUTHORITY",
+      "guard_id": "TRACE",
+      "source_ref": "sha256:f3b57da98db3b105e6a67b2c76471123365041ce86e53977be5aa7002b84c46a",
+      "source_version": "A0BK-v0.10.0-candidate"
+    },
+    {
+      "authority_ceiling": "NO_EXECUTION_AUTHORITY",
+      "guard_id": "AUTHORITY",
+      "source_ref": "sha256:f3b57da98db3b105e6a67b2c76471123365041ce86e53977be5aa7002b84c46a",
+      "source_version": "A0BK-v0.10.0-candidate"
+    },
+    {
+      "authority_ceiling": "NO_EXECUTION_AUTHORITY",
+      "guard_id": "CONSEQUENCE",
+      "source_ref": "sha256:f3b57da98db3b105e6a67b2c76471123365041ce86e53977be5aa7002b84c46a",
+      "source_version": "A0BK-v0.10.0-candidate"
+    },
+    {
+      "authority_ceiling": "NO_EXECUTION_AUTHORITY",
+      "guard_id": "RESOURCE",
+      "source_ref": "sha256:f3b57da98db3b105e6a67b2c76471123365041ce86e53977be5aa7002b84c46a",
+      "source_version": "A0BK-v0.10.0-candidate"
+    },
+    {
+      "authority_ceiling": "NO_EXECUTION_AUTHORITY",
+      "guard_id": "REENTRY",
+      "source_ref": "sha256:f3b57da98db3b105e6a67b2c76471123365041ce86e53977be5aa7002b84c46a",
+      "source_version": "A0BK-v0.10.0-candidate"
+    }
+  ],
+  "mode": "SHADOW_ONLY",
+  "non_claims": [
+    "This policy supplies advisory routing evidence only.",
+    "It creates no execution, permission, authority, PAL A15 closure, or external effect.",
+    "It does not establish complete A0BK, PAL, ZSA, FBT, PECAN, or A12 conformance.",
+    "It does not establish a Strongwiz performance or generalization improvement."
+  ],
+  "policy_id": "strongwiz-shadow-v0.1",
+  "policy_version": "0.1",
+  "scope": "Deterministic nonexecuting Strongwiz proposal routing inside a declared local shadow aperture.",
+  "source_ref": "sha256:f3b57da98db3b105e6a67b2c76471123365041ce86e53977be5aa7002b84c46a"
+}

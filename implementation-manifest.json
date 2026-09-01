@@ -1,0 +1,16 @@
+{
+  "a0bk_candidate_sha256": "f3b57da98db3b105e6a67b2c76471123365041ce86e53977be5aa7002b84c46a",
+  "build008_commit": "bbffd0be7d6d8b3a31f0c280632a52716bdd5ddd",
+  "build008_disposition": "PARTIAL",
+  "build008_packet_seal": "2f61e3196bee35171c910c152b53b84fbff0be98e273808569647a35c7c46215",
+  "implementation_scope": "Selected A0BK v0.10.0 candidate account, receipt, residual, serial-ledger, and Strongwiz shadow-routing mechanisms.",
+  "legacy_kernel_commit": "eb3505968a1b8a370862ce48f9f486b22a50cb17",
+  "non_claims": [
+    "No adoption or complete A0BK, PAL, ZSA, FBT, PECAN, or A12 conformance.",
+    "No execution authority, external effect, autonomous Kaggle readiness, or Strongwiz performance result.",
+    "No retroactive change to frozen Build 008 evidence or disposition."
+  ],
+  "package_version": "0.2.0",
+  "policy_profile": "strongwiz-shadow-v0.1",
+  "schema_version": "0.1"
+}

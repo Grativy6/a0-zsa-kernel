@@ -1,5 +1,37 @@
 # Revised design record
 
+## Successor namespace added in package v0.2
+
+The original record below remains the design of the preserved
+`a0_zsa_kernel` v0.1 surface. Package v0.2 adds `a0bk_kernel` beside it rather
+than converting old `WEIGHTED` records into a new vocabulary.
+
+The successor surface implements a bounded candidate profile:
+
+1. Strict canonical JSON refuses arbitrary floating-point tokens and preserves
+   the difference between JSON strings and integers.
+2. `ROOT`, `CHILD`, and `SUCCESSOR` are new-account operations with an explicit
+   own cut; `VERSION` is an exact one-step same-account continuation; `APPEND`
+   creates no account header.
+3. One typed payload binds to one immutable receipt header. A `TestReceipt`
+   cannot carry closure; only a complete `ClosureReceipt` envelope can describe
+   scoped closure status.
+4. Legacy bytes enter only through an exact digest and caller-supplied preserved
+   scope/status/authority ceiling. Missing legacy facts are not inferred.
+5. Residual transitions keep a stable residual ID and append lineage. Splitting
+   requires a partition witness or an explicit unallocated remainder.
+6. Strongwiz proposals and control snapshots are strict separate models. The
+   W0-W6 evaluator checks identity, witness, scope, trace, declared authority,
+   consequence, resource, and re-entry guards before ranking candidates.
+7. The return is deterministic and advisory, with no executor and no execution
+   authority. A local serial SQLite ledger can preserve the output but does not
+   establish a trusted issuer, distributed concurrency, or A12.
+
+This selected eight-guard project profile is not the candidate document's
+complete ten-guard registry. Its gaps and claim ceiling are operative parts of
+the design, not future results. See `docs/STRONGWIZ_ROUTING_PROFILE.md` and
+`docs/PROVENANCE.md`.
+
 This record incorporates the six approved corrections. Source meanings and non-claims are summarized in `reference/`; implementation details here are prototype choices, not amendments to PAL or ZSA.
 
 ## Status and attempt semantics
