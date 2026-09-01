@@ -63,4 +63,3 @@ The defensible profile-level statement is:
 
 This statement does not claim complete A0BK, PAL, ZSA, FBT, PECAN, A12,
 security, authority, execution, contest readiness, or performance benefit.
-

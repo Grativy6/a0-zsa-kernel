@@ -59,4 +59,3 @@ an email address, response team, encryption key, or external contact channel.
 - Public repository visibility exposes tracked history. Secrets and sealed or
   private evidence must remain outside Git and should be scanned before every
   publication or release boundary.
-
